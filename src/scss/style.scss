@@ -1,0 +1,23 @@
+@import '__vars';
+@import '__header';
+@import '__animation';
+@import '__intro';
+@import '__produtos';
+@import '__vitrine';
+
+html {
+    font-size: 62,5%;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body {
+    background-color: $color-primary;
+    font-family: $font-default;
+    margin: 0;
+}
+
+header {
+    display: block;
+    width: 100%;
+}

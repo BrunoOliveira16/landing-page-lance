@@ -1,0 +1,39 @@
+#intro {
+    display: block;
+    margin-top: 20px;
+   
+    .hero {
+        width: 100%;
+
+        img {
+            display: flex;
+            margin: 0 auto 0 auto;
+        }
+
+        h1 {
+            padding: 1rem 0 0;
+            text-align: center;
+            width: 100%;
+            color: $font-color-primary;
+        }
+    }
+}
+
+#sobre {
+    width: 90%;
+    height: auto;
+    margin: 80px auto 50px auto;
+    padding: 20px;
+    color: $font-color-primary;
+    background-color: $color-03;
+    border-radius: 15px;
+    box-shadow: 1px 8px 20px #052947;
+    h1 {
+        color: $color-04;
+        font-size: $font-size-default;
+    }
+    p {
+        line-height: 0.5rem;
+        font-size: $font-btn;
+    }
+}

@@ -1,0 +1,61 @@
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+    .logo{
+        width: 30%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 50px;
+    }
+
+    .nav{
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 20px;
+        &__item {
+            color: $font-color-primary;
+            margin: 0 20px 0 20px;
+            font-size: $font-size-nav;
+            text-decoration: none;
+            position: relative;
+            &:hover{
+                color: $color-secondary;
+                animation: toTop;
+                animation-duration: 1.5s;
+            }
+        }
+        &__btn {
+            height: 30px;
+            width: 110px;
+            color: $font-color-primary;
+            background-color: $color-secondary;
+            border-radius: 10px;
+            border: 2px solid $font-color-primary;
+            font-size: $font-btn;
+            font-weight: 700;
+            &:hover {
+                color: $color-secondary;
+                background-color: $font-color-primary;
+                border: 3px solid $color-secondary;
+                cursor: pointer;
+            }
+        }
+        &__input {
+            height: 25px;
+            width: 150px;
+            color: $color-secondary;
+            border-radius: 10px;
+            border: 2px solid $color-secondary;
+            font-size: $font-btn;
+            margin-right: 10px;
+            padding-left: 10px;
+            &:hover {
+                box-shadow: 1px 1px 10px #f58220;
+            }
+        }
+    }
+}

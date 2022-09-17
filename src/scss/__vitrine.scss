@@ -1,0 +1,62 @@
+.vitrine {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    &__item {
+        background-color: $color-07;
+        border-radius: 15px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 20rem;
+        padding: 1rem;
+        position: relative;
+        &:hover {
+            animation: toTop;
+            animation-duration: 2s;
+            box-shadow: 1px 8px 20px #052947;
+        }
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: $color-primary;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    &__desc {
+        color: $font-color-secondary;
+        font-size: $font-size-title;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    &__button {
+        box-shadow: 1px 8px 15px #052947;
+        background-color: $color-primary;
+        border-radius: 10px;
+        border: 2px solid $color-primary;
+        color: $font-color-primary;
+        padding: 10px 25px;
+        font-weight: bold;
+        font-size: $font-btn;
+        text-decoration: none;
+        align-self: center;
+        margin: 15px auto;
+        &:hover {
+            background-color: $font-color-primary;
+            color: $color-primary;
+            box-shadow: 1px 8px 15px #052947;
+        }
+    }
+}
