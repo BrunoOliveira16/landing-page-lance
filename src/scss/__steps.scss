@@ -1,0 +1,36 @@
+#como-funciona {
+    background-color: $font-color-primary;
+    padding: 30px;
+
+    h1 {
+        color: $color-secondary;
+        font-size: $font-size-large;
+        text-align: center;
+    }
+}
+
+.steps {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+
+    &__item {
+        margin: 1rem;
+        width: calc(80% / 5 - 1rem);
+        text-align: center;
+        height: 250px;
+        span {
+            color: $color-secondary;
+        }
+
+        img:hover {
+            filter: contrast(3);
+            width: 120px;
+            height: 150px;
+        }
+    }
+
+}

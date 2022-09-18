@@ -22,8 +22,8 @@
 #sobre {
     width: 90%;
     height: auto;
-    margin: 80px auto 50px auto;
-    padding: 20px;
+    margin: 80px auto;
+    padding: 40px;
     color: $font-color-primary;
     background-color: $color-03;
     border-radius: 15px;
@@ -31,9 +31,12 @@
     h1 {
         color: $color-04;
         font-size: $font-size-default;
+        padding: 0 20px;
     }
     p {
-        line-height: 0.5rem;
+        line-height: 1.5rem;
         font-size: $font-btn;
+        margin: 0;
+        padding: 0 20px;
     }
 }
