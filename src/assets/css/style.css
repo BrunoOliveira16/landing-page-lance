@@ -221,7 +221,7 @@ header .container .nav__input:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 80px auto;
+  margin: 80px auto 50px auto;
 }
 #depoimentos .stay__painel {
   width: 50%;
@@ -259,7 +259,7 @@ header .container .nav__input:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 #depoimentos .container .box {
   width: calc(30% - 1rem);
@@ -350,6 +350,9 @@ footer .box__second .nav li a {
   color: #ffffff;
   line-height: 2rem;
 }
+footer .box__second .nav li a:hover {
+  color: #fab73a;
+}
 footer .box__icones {
   display: flex;
   justify-content: center;
@@ -359,6 +362,10 @@ footer .box__icones img {
   height: 40px;
   margin-left: 10px;
   margin-right: 10px;
+}
+footer .box__icones img:hover {
+  filter: brightness(2);
+  cursor: pointer;
 }
 footer .dev {
   border-top: 2px solid #ffffff;
@@ -372,6 +379,61 @@ footer .dev a {
   color: #fab73a;
   font-weight: 700;
   text-decoration: none;
+}
+
+#contato {
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 60%;
+  color: #195484;
+}
+#contato .news {
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #fab73a;
+  position: relative;
+  top: 100px;
+  border-radius: 10px;
+  box-shadow: 1px 8px 20px #052947;
+}
+#contato .news h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+#contato .news p {
+  padding: 10px 50px;
+  font-weight: 400;
+}
+#contato .news__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contato .news__form input {
+  width: 50%;
+  height: 40px;
+  border: 2px solid #195484;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin: 0 10px;
+  color: #195484;
+  font-size: 1.2rem;
+}
+#contato .news__form button {
+  background-color: #195484;
+  color: #ffffff;
+  font-size: 1.2rem;
+  width: 25%;
+  height: 40px;
+  margin: 0 10px;
+  border: 2px solid #195484;
+  border-radius: 10px;
+}
+#contato .news__form button:hover {
+  background-color: #ffffff;
+  color: #195484;
+  cursor: pointer;
 }
 
 html {

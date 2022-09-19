@@ -8,7 +8,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 80px auto;
+        margin: 80px auto 50px auto;
 
         &__painel {
             width: 50%;
@@ -53,7 +53,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         .box {
             width: calc(90% / 3 - 1rem);
