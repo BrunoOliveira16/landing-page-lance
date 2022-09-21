@@ -5,7 +5,7 @@ Projeto de criação de Landing Page de uma vitrine de serviços.
 - Designer 01
 ![Screenshot](./src/assets/img/designer-01.jpg)
 
-<h4 align="center"><a href="https://brunooliveira16.github.io/landing-page-fylo/">Clique aqui e visite o projeto</a></h4>
+<h4 align="center"><a href="https://brunooliveira16.github.io/landing-page-lance/">Clique aqui e visite o projeto</a></h4>
 
 ## 📚 Descrição
 
