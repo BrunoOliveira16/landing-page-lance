@@ -27,6 +27,10 @@ header .container {
                 animation: toTop;
                 animation-duration: 1.5s;
             }
+
+            @media (max-width: 1250px){
+                font-size: $font-size-title;
+            }
         }
         &__btn {
             height: 30px;

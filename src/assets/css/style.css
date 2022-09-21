@@ -28,6 +28,11 @@ header .container .nav__item:hover {
   animation: toTop;
   animation-duration: 1.5s;
 }
+@media (max-width: 1250px) {
+  header .container .nav__item {
+    font-size: 1.2rem;
+  }
+}
 header .container .nav__btn {
   height: 30px;
   width: 110px;
