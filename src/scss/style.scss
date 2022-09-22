@@ -8,6 +8,16 @@
 @import '__depoimentos';
 @import '__footer';
 @import '__news';
+@import '__grid';
+
+@viewport {
+    width: device-width;
+    zoom: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 html {
     font-size: 62,5%;
@@ -29,3 +39,4 @@ header {
     display: block;
     width: 100%;
 }
+
