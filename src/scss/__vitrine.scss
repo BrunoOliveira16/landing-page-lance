@@ -4,6 +4,10 @@
     gap: 1rem;
     margin-bottom: 50px;
 
+    @media screen and (max-width: 820px) and (min-width: 360px) {
+        grid-template-columns: repeat(2, 2fr);
+    }
+
     &__item {
         background-color: $color-07;
         border-radius: 15px;

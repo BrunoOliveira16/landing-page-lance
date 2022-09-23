@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header .container {
   display: flex;
   flex-direction: row;
@@ -7,14 +8,12 @@ header .container .logo {
   width: 30%;
   display: flex;
   justify-content: flex-start;
-  padding-left: 50px;
 }
 header .container .nav {
   width: 70%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-  padding-right: 20px;
 }
 header .container .nav__item {
   color: #ffffff;
@@ -112,6 +111,7 @@ header .container .nav__input:hover {
 }
 
 #produtos {
+  width: 100%;
   background-color: #daeef7;
   padding: 20px 50px;
 }
@@ -128,6 +128,11 @@ header .container .nav__input:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 820px) and (min-width: 360px) {
+  .vitrine {
+    grid-template-columns: repeat(2, 2fr);
+  }
 }
 .vitrine__item {
   background-color: #fcdea6;
@@ -441,10 +446,71 @@ footer .dev a {
   cursor: pointer;
 }
 
-@viewport {
-  width: device-width;
-  zoom: 1;
+.col-1 {
+  width: 8.33%;
 }
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 24.99%;
+}
+
+.col-4 {
+  width: 33.32%;
+}
+
+.col-5 {
+  width: 41.65%;
+}
+
+.col-6 {
+  width: 49.98%;
+}
+
+.col-7 {
+  width: 58.31%;
+}
+
+.col-8 {
+  width: 66.64%;
+}
+
+.col-9 {
+  width: 74.97%;
+}
+
+.col-10 {
+  width: 83.3%;
+}
+
+.col-11 {
+  width: 91.63%;
+}
+
+.col-12 {
+  width: 99.96%;
+}
+
+/* Código base para traçar colunas na tela, para orientação do posicionamento (orientação para dev)*/
+.bg-red {
+  background-color: rgba(255, 0, 0, 0.2);
+  height: 100vh;
+  width: 98%;
+  margin: 0 auto;
+  display: block;
+}
+
+/*.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+}*/
 * {
   box-sizing: border-box;
 }
@@ -469,5 +535,7 @@ header {
   display: block;
   width: 100%;
 }
+
+/* Responsive */
 
 /*# sourceMappingURL=style.css.map */
