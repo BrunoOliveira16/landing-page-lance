@@ -3,21 +3,41 @@ header .container {
   display: flex;
   flex-direction: row;
   align-content: center;
+  padding: 2rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 854px) and (min-width: 360px) {
+  header .container {
+    display: block;
+  }
 }
 header .container .logo {
-  width: 30%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+}
+@media screen and (max-width: 854px) and (min-width: 360px) {
+  header .container .logo {
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 header .container .nav {
-  width: 70%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
+}
+@media screen and (max-width: 854px) and (min-width: 360px) {
+  header .container .nav {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: center;
+  }
 }
 header .container .nav__item {
   color: #ffffff;
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
   font-size: 1.6rem;
   text-decoration: none;
   position: relative;
@@ -27,14 +47,19 @@ header .container .nav__item:hover {
   animation: toTop;
   animation-duration: 1.5s;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1267px) {
   header .container .nav__item {
     font-size: 1.2rem;
+    margin: 0 10px;
+  }
+}
+@media (max-width: 783px) {
+  header .container .nav__item {
+    font-size: 1rem;
   }
 }
 header .container .nav__btn {
   height: 30px;
-  width: 110px;
   color: #ffffff;
   background-color: #f58220;
   border-radius: 10px;
@@ -48,9 +73,13 @@ header .container .nav__btn:hover {
   border: 3px solid #f58220;
   cursor: pointer;
 }
+@media (max-width: 783px) {
+  header .container .nav__btn {
+    width: 30%;
+  }
+}
 header .container .nav__input {
   height: 25px;
-  width: 150px;
   color: #f58220;
   border-radius: 10px;
   border: 2px solid #f58220;
@@ -60,6 +89,12 @@ header .container .nav__input {
 }
 header .container .nav__input:hover {
   box-shadow: 1px 1px 10px #f58220;
+}
+@media (max-width: 783px) {
+  header .container .nav__input {
+    width: 50%;
+    height: 30px;
+  }
 }
 
 @keyframes toTop {
@@ -80,6 +115,7 @@ header .container .nav__input:hover {
 #intro .hero img {
   display: flex;
   margin: 0 auto 0 auto;
+  width: 100%;
 }
 #intro .hero h1 {
   padding: 1rem 0 0;
@@ -129,9 +165,9 @@ header .container .nav__input:hover {
   gap: 1rem;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 820px) and (min-width: 360px) {
+@media screen and (max-width: 1024px) and (min-width: 360px) {
   .vitrine {
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 3fr);
   }
 }
 .vitrine__item {
@@ -206,11 +242,24 @@ header .container .nav__input:hover {
   flex-direction: row;
   height: auto;
 }
+@media screen and (max-width: 769px) and (min-width: 360px) {
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
 .steps__item {
   margin: 1rem;
   width: calc(16% - 1rem);
   text-align: center;
   height: 250px;
+}
+@media screen and (max-width: 769px) and (min-width: 360px) {
+  .steps__item {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .steps__item span {
   color: #f58220;
@@ -271,6 +320,13 @@ header .container .nav__input:hover {
   align-items: center;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 769px) and (min-width: 360px) {
+  #depoimentos .container {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    gap: 1rem;
+  }
+}
 #depoimentos .container .box {
   width: calc(30% - 1rem);
   height: auto;
@@ -307,6 +363,12 @@ header .container .nav__input:hover {
   border-radius: 50%;
   margin-right: 10px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 769px) and (min-width: 360px) {
+  #depoimentos .container .box {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 footer {
@@ -398,6 +460,12 @@ footer .dev a {
   width: 60%;
   color: #195484;
 }
+@media screen and (max-width: 769px) and (min-width: 360px) {
+  #contato {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
 #contato .news {
   margin: 0 auto;
   padding: 50px 0;
@@ -420,6 +488,12 @@ footer .dev a {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 769px) and (min-width: 360px) {
+  #contato .news__form {
+    display: block;
+    margin: 0 auto;
+  }
+}
 #contato .news__form input {
   width: 50%;
   height: 40px;
@@ -429,6 +503,12 @@ footer .dev a {
   margin: 0 10px;
   color: #195484;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 769px) and (min-width: 360px) {
+  #contato .news__form input {
+    width: 50%;
+    font-size: 1rem;
+  }
 }
 #contato .news__form button {
   background-color: #195484;
@@ -444,6 +524,19 @@ footer .dev a {
   background-color: #ffffff;
   color: #195484;
   cursor: pointer;
+}
+@media (max-width: 1024px) {
+  #contato .news__form button {
+    width: 40%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 769px) and (min-width: 360px) {
+  #contato .news__form button {
+    width: 50%;
+    margin: 5px auto;
+    font-size: 1rem;
+  }
 }
 
 .col-1 {
@@ -494,6 +587,19 @@ footer .dev a {
   width: 99.96%;
 }
 
+@media (max-width: 767px) {
+  [class*=col-] {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  [class*=col-] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 /* Código base para traçar colunas na tela, para orientação do posicionamento (orientação para dev)*/
 .bg-red {
   background-color: rgba(255, 0, 0, 0.2);

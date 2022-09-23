@@ -17,11 +17,23 @@
     flex-direction: row;
     height: auto;
 
+    @media screen  and (max-width:769px) and (min-width: 360px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
     &__item {
         margin: 1rem;
         width: calc(80% / 5 - 1rem);
         text-align: center;
         height: 250px;
+
+        @media screen  and (max-width:769px) and (min-width: 360px) {
+            width: 100%;
+            margin: 0 auto;
+        }
+
         span {
             color: $color-secondary;
         }

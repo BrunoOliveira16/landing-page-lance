@@ -5,6 +5,11 @@
     width: 60%;
     color: $color-03;
 
+    @media screen  and (max-width:769px) and (min-width: 360px) {
+        width: 80%;
+        margin: 20px auto;
+    }
+
     .news {
         margin: 0 auto;
         padding: 50px 0;
@@ -28,6 +33,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
+            @media screen  and (max-width:769px) and (min-width: 360px) {
+                display: block;
+                margin: 0 auto;
+            }
 
             input {
                 width: 50%;
@@ -38,6 +48,11 @@
                 margin: 0 10px;
                 color: $color-03;
                 font-size: $font-size-title;
+
+                @media screen  and (max-width:769px) and (min-width: 360px) {
+                    width: 50%;
+                    font-size: $font-btn;
+                }
             }
 
             button {
@@ -53,6 +68,16 @@
                     background-color: $font-color-primary;
                     color: $color-03;
                     cursor: pointer;
+                }
+                @media (max-width:1024px){
+                    width: 40%;
+                    font-size: $font-btn;
+                }
+
+                @media screen  and (max-width:769px) and (min-width: 360px) {
+                    width: 50%;
+                    margin: 5px auto;
+                    font-size: $font-btn;
                 }
             }
         }

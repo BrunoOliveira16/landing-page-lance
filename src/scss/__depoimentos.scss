@@ -55,6 +55,12 @@
         align-items: center;
         margin-bottom: 10px;
 
+        @media screen  and (max-width:769px) and (min-width: 360px) {
+            display: grid;
+            grid-template-columns: repeat(1, 4fr);
+            gap: 1rem;
+        }
+
         .box {
             width: calc(90% / 3 - 1rem);
             height: auto;
@@ -93,6 +99,11 @@
                 border-radius: 50%;
                 margin-right: 10px;
                 margin-bottom: 20px;
+            }
+
+            @media screen  and (max-width:769px) and (min-width: 360px) {
+                width: 80%;
+                margin: 0 auto;
             }
         }
     }

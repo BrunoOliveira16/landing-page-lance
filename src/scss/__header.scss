@@ -2,22 +2,39 @@ header .container {
     display: flex;
     flex-direction: row;
     align-content: center;
+    padding: 2rem;
+    margin: 0 auto;
+
+    @media screen and (max-width:854px) and (min-width: 360px) {
+        display: block;
+    }
 
     .logo{
-        width: 30%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
+
+        @media screen and (max-width:854px) and (min-width: 360px) {
+            margin: 0 auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+    }
     }
 
     .nav{
-        width: 70%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
         align-items: center;
+
+        @media screen and (max-width:854px) and (min-width: 360px) {
+            width: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            justify-content: center;
+    }
 
         &__item {
             color: $font-color-primary;
-            margin: 0 20px 0 20px;
+            margin: 0 20px;
             font-size: $font-size-nav;
             text-decoration: none;
             position: relative;
@@ -27,13 +44,18 @@ header .container {
                 animation-duration: 1.5s;
             }
 
-            @media (max-width: 1250px){
+            @media (max-width: 1267px){
                 font-size: $font-size-title;
+                margin: 0 10px;
+            }
+
+            @media (max-width: 783px){
+                font-size: $font-btn;
             }
         }
+
         &__btn {
             height: 30px;
-            width: 110px;
             color: $font-color-primary;
             background-color: $color-secondary;
             border-radius: 10px;
@@ -46,10 +68,12 @@ header .container {
                 border: 3px solid $color-secondary;
                 cursor: pointer;
             }
+            @media (max-width: 783px){
+                width: 30%;
+            }
         }
         &__input {
             height: 25px;
-            width: 150px;
             color: $color-secondary;
             border-radius: 10px;
             border: 2px solid $color-secondary;
@@ -58,6 +82,10 @@ header .container {
             padding-left: 10px;
             &:hover {
                 box-shadow: 1px 1px 10px #f58220;
+            }
+            @media (max-width: 783px){
+                width: 50%;
+                height: 30px;
             }
         }
     }

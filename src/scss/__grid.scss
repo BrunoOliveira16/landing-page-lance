@@ -11,6 +11,25 @@
 .col-11 { width: calc(8.33% * 11)}
 .col-12 { width: calc(8.33% * 12)}
 
+@media (max-width:767px) {
+    [class*="col-" ] {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    [class*="col-" ] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
+
+
+
 
 /* Código base para traçar colunas na tela, para orientação do posicionamento (orientação para dev)*/
 .bg-red {
