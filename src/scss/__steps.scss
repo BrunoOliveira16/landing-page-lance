@@ -17,10 +17,14 @@
     flex-direction: row;
     height: auto;
 
-    @media screen  and (max-width:769px) and (min-width: 360px) {
+    @media screen  and (max-width:769px) and (min-width: 436px) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+    }
+
+    @media screen  and (max-width:435px) and (min-width: 320px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     &__item {
@@ -29,7 +33,7 @@
         text-align: center;
         height: 250px;
 
-        @media screen  and (max-width:769px) and (min-width: 360px) {
+        @media screen  and (max-width:769px) and (min-width: 320px) {
             width: 100%;
             margin: 0 auto;
         }

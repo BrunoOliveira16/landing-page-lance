@@ -9,6 +9,18 @@ footer {
         gap: 1rem;
         margin-top: 40px;
 
+        @media screen  and (max-width:700px) and (min-width: 450px) {
+            display: grid;
+            grid-template-columns: repeat(2, 4fr);
+            gap: 1rem;
+        }
+
+        @media screen  and (max-width:449px) and (min-width: 320px) {
+            display: grid;
+            grid-template-columns: repeat(1, 4fr);
+            gap: 1rem;
+        }
+
         &__first {
             display: flex;
 
@@ -85,6 +97,11 @@ footer {
         small {
             margin-left: 15px;
         }
+
+        @media screen  and (max-width:339px){
+            margin-left: 0;
+        }
+
         a {
             color: $color-04;
             font-weight: 700;

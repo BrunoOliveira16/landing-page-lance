@@ -26,11 +26,6 @@
     }
 }
 
-
-
-
-
-
 /* Código base para traçar colunas na tela, para orientação do posicionamento (orientação para dev)*/
 .bg-red {
     background-color: rgba($color: #ff0000, $alpha: .2);
@@ -40,11 +35,11 @@
     display: block;
 }
 
-/*.grid {
+.grid {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 100vh;
     position: fixed;
     width: 100%;
-}*/
+}

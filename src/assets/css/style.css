@@ -6,20 +6,30 @@ header .container {
   padding: 2rem;
   margin: 0 auto;
 }
-@media screen and (max-width: 854px) and (min-width: 360px) {
+@media screen and (max-width: 854px) and (min-width: 320px) {
   header .container {
     display: block;
+  }
+}
+@media screen and (max-width: 755px) and (min-width: 320px) {
+  header .container {
+    padding: 0;
   }
 }
 header .container .logo {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 854px) and (min-width: 360px) {
+@media screen and (max-width: 854px) and (min-width: 320px) {
   header .container .logo {
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 755px) and (min-width: 320px) {
+  header .container .logo {
+    display: none;
   }
 }
 header .container .nav {
@@ -27,12 +37,15 @@ header .container .nav {
   justify-content: flex-end;
   align-items: center;
 }
-@media screen and (max-width: 854px) and (min-width: 360px) {
+@media screen and (max-width: 854px) and (min-width: 756px) {
   header .container .nav {
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 755px) and (min-width: 320px) {
+  header .container .nav {
+    display: none;
   }
 }
 header .container .nav__item {
@@ -66,6 +79,7 @@ header .container .nav__btn {
   border: 2px solid #ffffff;
   font-size: 1rem;
   font-weight: 700;
+  text-align: center;
 }
 header .container .nav__btn:hover {
   color: #f58220;
@@ -75,7 +89,7 @@ header .container .nav__btn:hover {
 }
 @media (max-width: 783px) {
   header .container .nav__btn {
-    width: 30%;
+    width: 20%;
   }
 }
 header .container .nav__input {
@@ -92,8 +106,28 @@ header .container .nav__input:hover {
 }
 @media (max-width: 783px) {
   header .container .nav__input {
-    width: 50%;
+    width: 30%;
     height: 30px;
+    margin-left: 20px;
+  }
+}
+
+header .menu {
+  display: none;
+}
+header .menu__mobile {
+  list-style: none;
+}
+@media screen and (max-width: 755px) and (min-width: 320px) {
+  header .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  header .menu a {
+    float: right;
+    background-color: #ffffff;
   }
 }
 
@@ -111,6 +145,11 @@ header .container .nav__input:hover {
 }
 #intro .hero {
   width: 100%;
+}
+@media screen and (max-width: 434px) and (min-width: 320px) {
+  #intro .hero {
+    padding: 0 10px;
+  }
 }
 #intro .hero img {
   display: flex;
@@ -165,9 +204,21 @@ header .container .nav__input:hover {
   gap: 1rem;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 1024px) and (min-width: 360px) {
+@media screen and (max-width: 1024px) and (min-width: 668px) {
   .vitrine {
     grid-template-columns: repeat(2, 3fr);
+  }
+}
+@media screen and (max-width: 667px) and (min-width: 364px) {
+  .vitrine {
+    grid-template-columns: repeat(1, 4fr);
+  }
+}
+@media screen and (max-width: 363px) and (min-width: 320px) {
+  .vitrine {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .vitrine__item {
@@ -185,6 +236,11 @@ header .container .nav__input:hover {
   animation: toTop;
   animation-duration: 2s;
   box-shadow: 1px 8px 20px #052947;
+}
+@media screen and (max-width: 363px) and (min-width: 320px) {
+  .vitrine__item {
+    margin: 20px auto;
+  }
 }
 .vitrine__image {
   display: flex;
@@ -242,11 +298,16 @@ header .container .nav__input:hover {
   flex-direction: row;
   height: auto;
 }
-@media screen and (max-width: 769px) and (min-width: 360px) {
+@media screen and (max-width: 769px) and (min-width: 436px) {
   .steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+  }
+}
+@media screen and (max-width: 435px) and (min-width: 320px) {
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .steps__item {
@@ -255,7 +316,7 @@ header .container .nav__input:hover {
   text-align: center;
   height: 250px;
 }
-@media screen and (max-width: 769px) and (min-width: 360px) {
+@media screen and (max-width: 769px) and (min-width: 320px) {
   .steps__item {
     width: 100%;
     margin: 0 auto;
@@ -282,8 +343,24 @@ header .container .nav__input:hover {
   align-items: center;
   margin: 80px auto 50px auto;
 }
+@media screen and (max-width: 725px) and (min-width: 320px) {
+  #depoimentos .stay {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 #depoimentos .stay__painel {
   width: 50%;
+}
+@media screen and (max-width: 725px) and (min-width: 320px) {
+  #depoimentos .stay__painel {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
 }
 #depoimentos .stay__painel img {
   width: 90%;
@@ -292,6 +369,13 @@ header .container .nav__input:hover {
 #depoimentos .stay__text {
   width: 50%;
   height: auto;
+}
+@media screen and (max-width: 725px) and (min-width: 320px) {
+  #depoimentos .stay__text {
+    margin: 30px auto;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
 }
 #depoimentos .stay__text h1 {
   font-size: 1.8rem;
@@ -320,7 +404,7 @@ header .container .nav__input:hover {
   align-items: center;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 769px) and (min-width: 360px) {
+@media screen and (max-width: 769px) and (min-width: 320px) {
   #depoimentos .container {
     display: grid;
     grid-template-columns: repeat(1, 4fr);
@@ -364,7 +448,7 @@ header .container .nav__input:hover {
   margin-right: 10px;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 769px) and (min-width: 360px) {
+@media screen and (max-width: 769px) and (min-width: 320px) {
   #depoimentos .container .box {
     width: 80%;
     margin: 0 auto;
@@ -381,6 +465,20 @@ footer .box {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 40px;
+}
+@media screen and (max-width: 700px) and (min-width: 450px) {
+  footer .box {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 449px) and (min-width: 320px) {
+  footer .box {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    gap: 1rem;
+  }
 }
 footer .box__first {
   display: flex;
@@ -447,6 +545,11 @@ footer .dev {
 footer .dev small {
   margin-left: 15px;
 }
+@media screen and (max-width: 339px) {
+  footer .dev {
+    margin-left: 0;
+  }
+}
 footer .dev a {
   color: #fab73a;
   font-weight: 700;
@@ -460,7 +563,7 @@ footer .dev a {
   width: 60%;
   color: #195484;
 }
-@media screen and (max-width: 769px) and (min-width: 360px) {
+@media screen and (max-width: 769px) and (min-width: 320px) {
   #contato {
     width: 80%;
     margin: 20px auto;
@@ -488,7 +591,7 @@ footer .dev a {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 769px) and (min-width: 360px) {
+@media screen and (max-width: 769px) and (min-width: 320px) {
   #contato .news__form {
     display: block;
     margin: 0 auto;
@@ -504,9 +607,15 @@ footer .dev a {
   color: #195484;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 769px) and (min-width: 360px) {
+@media screen and (max-width: 769px) and (min-width: 495px) {
   #contato .news__form input {
     width: 50%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 494px) and (min-width: 320px) {
+  #contato .news__form input {
+    width: 70%;
     font-size: 1rem;
   }
 }
@@ -531,9 +640,16 @@ footer .dev a {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 769px) and (min-width: 360px) {
+@media screen and (max-width: 769px) and (min-width: 495px) {
   #contato .news__form button {
     width: 50%;
+    margin: 5px auto;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 494px) and (min-width: 320px) {
+  #contato .news__form button {
+    width: 70%;
     margin: 5px auto;
     font-size: 1rem;
   }
@@ -626,6 +742,7 @@ html {
   scroll-behavior: smooth;
   text-decoration: none;
   box-sizing: border-box;
+  min-width: 375px;
 }
 
 body {
@@ -635,13 +752,12 @@ body {
   padding: 0;
   height: auto;
   max-width: 1440px;
+  min-width: 375px;
 }
 
 header {
   display: block;
   width: 100%;
 }
-
-/* Responsive */
 
 /*# sourceMappingURL=style.css.map */

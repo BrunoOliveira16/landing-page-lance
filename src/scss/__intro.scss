@@ -5,6 +5,10 @@
     .hero {
         width: 100%;
 
+        @media screen  and (max-width:434px) and (min-width: 320px) {
+            padding: 0 10px;
+        }
+
         img {
             display: flex;
             margin: 0 auto 0 auto;

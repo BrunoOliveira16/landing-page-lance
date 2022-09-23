@@ -4,8 +4,18 @@
     gap: 1rem;
     margin-bottom: 50px;
 
-    @media screen and (max-width: 1024px) and (min-width: 360px) {
+    @media screen and (max-width: 1024px) and (min-width: 668px) {
         grid-template-columns: repeat(2, 3fr);
+    }
+
+    @media screen and (max-width: 667px) and (min-width: 364px) {
+        grid-template-columns: repeat(1, 4fr);
+    }
+
+    @media screen and (max-width: 363px) and (min-width: 320px) {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
     }
 
     &__item {
@@ -23,6 +33,11 @@
             animation-duration: 2s;
             box-shadow: 1px 8px 20px #052947;
         }
+
+        @media screen and (max-width: 363px) and (min-width: 320px) {
+            margin: 20px auto;
+        }
+
     }
 
     &__image {

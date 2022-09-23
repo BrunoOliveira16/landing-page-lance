@@ -19,6 +19,7 @@ html {
     scroll-behavior: smooth;
     text-decoration: none;
     box-sizing: border-box;
+    min-width: 375px;
 }
 
 body {
@@ -28,12 +29,10 @@ body {
     padding: 0;
     height: auto;
     max-width: 1440px;
+    min-width: 375px;
 }
 
 header {
     display: block;
     width: 100%;
 }
-
-/* Responsive */
-@import '__responsive';
