@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="./src/assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./src/assets/css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
     <title>Lance Negócios</title>
 </head>
 <body>
@@ -24,17 +26,25 @@
                 <button class="nav__btn col-2" type="button">Pesquisar</button>
             </nav>
         </div>
-        <div class="menu">
+        <div class="menu col-12">
             <h2 class="logo col-6">
                 <img src="./src/assets/img/logo-lance.png" alt="Lance Negócios">
             </h2>
-            <ul class="menu__mobile col-6">
-                <li class="menu__nav">
-                    <a href="#">
+            <nav class="menu__mobile col-2">
+                <li class="menu__nav col-3">
+                    <a href="javascript://" class="menu__icon">
                         <img src="./src/assets/img/icon-menu.svg" alt="icone-mobile">
                     </a>
+                    <ul class="menu__list">
+                        <li class="list__sub"><a class="list__item" href="#sobre">Sobre</a></li>
+                        <li class="list__sub"><a class="list__item" href="#produtos">Produtos</a></li>
+                        <li class="list__sub"><a class="list__item" href="#como-funciona">Como funciona</a></li>
+                        <li class="list__sub"><a class="list__item" href="#contato">Contato</a></li>
+                        <input class="list__input" type="text">
+                        <button class="list__btn" type="button">Pesquisar</button>
+                    </ul>
                 </li>
-            </ul>
+            </nav>
         </div>
     </header>
     <section id="intro">
@@ -227,5 +237,8 @@
             <small>Desenvolvido por <a href="https://github.com/BrunoOliveira16">Bruno Oliveira</a>.</small></p>
         </div>
     </footer>
+
+    <script src="./src/assets/js/index.js"></script>
+
 </body>
 </html>

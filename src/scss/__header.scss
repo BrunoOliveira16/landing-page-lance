@@ -120,4 +120,70 @@ header .menu {
             background-color: $font-color-primary;
         }
     }
+
+    .menu__nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        float: left;
+    }
+
+    &__icon {
+        margin-top: 0;
+    }
+
+    /* formatação do menu dropdown*/
+    ul {
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        list-style: none;
+        align-items:flex-start;
+        padding: 20px 10px;
+        margin-top: 30px;
+        background-color: $color-06;
+        .list__sub {
+            display: flex;
+        }
+    }
+
+    .menu__list {
+        display: none;
+    }
+
+    .list__item {
+        text-decoration: none;
+        color: $color-primary;
+        background-color: $color-06;
+        font-weight: 700;
+        margin: 5px 0;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    .list__input {
+        width: 100%;
+        border: 2px solid $color-secondary;
+        border-radius: 5px;
+        margin: 5px 0;
+    } 
+
+    .list__btn {
+        width: 100%;
+        background-color: $color-secondary;
+        color: $font-color-primary;
+        font-weight: 700;
+        border: 2px solid $font-color-primary;
+        border-radius: 5px;
+        text-align: center;
+        &:hover {
+            color: $color-secondary;
+            background-color: $font-color-primary;
+            border: 3px solid $color-secondary;
+            cursor: pointer;
+        }
+    }
 }
