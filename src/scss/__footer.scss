@@ -3,6 +3,13 @@ footer {
     padding: 100px 50px 30px 50px;
     color: $font-color-primary;
 
+    @media screen  and (max-width:449px) and (min-width: 320px) {
+       img {
+        display: flex;
+        margin: 5px auto;
+       }
+    }
+
     .box {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -19,6 +26,11 @@ footer {
             display: grid;
             grid-template-columns: repeat(1, 4fr);
             gap: 1rem;
+            text-align: center;
+
+            ul {
+                padding: 0;
+            }
         }
 
         &__first {
@@ -93,6 +105,11 @@ footer {
         border-top: 2px solid $font-color-primary;
         margin-top: 50px;
         margin-left: 15px;
+
+        @media screen  and (max-width:449px) and (min-width: 320px) {
+            margin-left: 0;
+            text-align: center;
+        }
 
         small {
             margin-left: 15px;

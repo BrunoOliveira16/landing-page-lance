@@ -142,7 +142,7 @@ header .menu__icon {
   margin-top: 0;
 }
 header .menu ul {
-  width: 100%;
+  width: 150px;
   position: absolute;
   flex-direction: column;
   list-style: none;
@@ -518,6 +518,12 @@ footer {
   padding: 100px 50px 30px 50px;
   color: #ffffff;
 }
+@media screen and (max-width: 449px) and (min-width: 320px) {
+  footer img {
+    display: flex;
+    margin: 5px auto;
+  }
+}
 footer .box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -536,6 +542,10 @@ footer .box {
     display: grid;
     grid-template-columns: repeat(1, 4fr);
     gap: 1rem;
+    text-align: center;
+  }
+  footer .box ul {
+    padding: 0;
   }
 }
 footer .box__first {
@@ -599,6 +609,12 @@ footer .dev {
   border-top: 2px solid #ffffff;
   margin-top: 50px;
   margin-left: 15px;
+}
+@media screen and (max-width: 449px) and (min-width: 320px) {
+  footer .dev {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 footer .dev small {
   margin-left: 15px;
