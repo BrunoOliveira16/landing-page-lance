@@ -1,9 +1,136 @@
 footer {
+<<<<<<< HEAD
     p {
         color: $font-color-primary;
         font-size: $font-size-default;
         a {
             color: $color-secondary;
+=======
+    background-color: $color-03;
+    padding: 100px 50px 30px 50px;
+    color: $font-color-primary;
+
+    @media screen  and (max-width:449px) and (min-width: 320px) {
+       img {
+        display: flex;
+        margin: 5px auto;
+       }
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-top: 40px;
+
+        @media screen  and (max-width:700px) and (min-width: 450px) {
+            display: grid;
+            grid-template-columns: repeat(2, 4fr);
+            gap: 1rem;
+        }
+
+        @media screen  and (max-width:449px) and (min-width: 320px) {
+            display: grid;
+            grid-template-columns: repeat(1, 4fr);
+            gap: 1rem;
+            text-align: center;
+
+            ul {
+                padding: 0;
+            }
+        }
+
+        &__first {
+            display: flex;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin: 10px;
+                position: relative;
+                top: 10px;
+            }
+        }
+
+        &__second {
+            display: block;
+            margin: 0 auto;
+            
+            .box__info {
+                display: flex;
+                flex-direction: row;
+            }
+
+            img{
+                width: 20px;
+                height: 20px;
+                margin: 10px;
+                position: relative;
+                top: 8px;
+            }
+            
+            .nav {
+                display: flex;
+                justify-content: center;
+
+                .list {
+                    margin: 0;
+                }
+                li {
+                    list-style: none;
+    
+                    a {
+                        text-decoration: none;
+                        color: $font-color-primary;
+                        line-height: 2rem;
+                        &:hover {
+                            color: $color-04;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__icones {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-left: 10px;
+                margin-right: 10px;
+                &:hover {
+                    filter: brightness(2);
+                    cursor: pointer;
+                } 
+            }
+        }
+    }
+
+    .dev {
+        border-top: 2px solid $font-color-primary;
+        margin-top: 50px;
+        margin-left: 15px;
+
+        @media screen  and (max-width:449px) and (min-width: 320px) {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        small {
+            margin-left: 15px;
+        }
+
+        @media screen  and (max-width:339px){
+            margin-left: 0;
+        }
+
+        a {
+            color: $color-04;
+            font-weight: 700;
+            text-decoration: none;
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
         }
     }
 }

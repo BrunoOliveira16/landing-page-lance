@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import '__vars.scss';
 @import '__fonts.scss';
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
@@ -15,11 +16,36 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+=======
+@import '__vars';
+@import '__header';
+@import '__animation';
+@import '__intro';
+@import '__produtos';
+@import '__vitrine';
+@import '__steps';
+@import '__depoimentos';
+@import '__footer';
+@import '__news';
+@import '__grid';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+    min-width: 375px;
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
 }
 
 body {
     background-color: $color-primary;
     font-family: $font-default;
+<<<<<<< HEAD
     margin: 0;
 }
 
@@ -67,3 +93,16 @@ section {
     margin: 0 auto;
     max-width: 90vw;
 };
+=======
+    margin: 0 auto 0 auto;
+    padding: 0;
+    height: auto;
+    max-width: 1440px;
+    min-width: 375px;
+}
+
+header {
+    display: block;
+    width: 100%;
+}
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a

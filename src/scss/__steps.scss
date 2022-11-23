@@ -1,5 +1,16 @@
 #como-funciona {
+<<<<<<< HEAD
     background: $font-color-primary;
+=======
+    background-color: $font-color-primary;
+    padding: 30px;
+
+    h1 {
+        color: $color-secondary;
+        font-size: $font-size-large;
+        text-align: center;
+    }
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
 }
 
 .steps {
@@ -8,14 +19,47 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+<<<<<<< HEAD
+=======
+    height: auto;
+
+    @media screen  and (max-width:769px) and (min-width: 436px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    @media screen  and (max-width:435px) and (min-width: 320px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
 
     &__item {
         margin: 1rem;
         width: calc(80% / 5 - 1rem);
         text-align: center;
+<<<<<<< HEAD
         span {
             color: $color-secondary;
         }
+=======
+        height: 250px;
+
+        @media screen  and (max-width:769px) and (min-width: 320px) {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        span {
+            color: $color-secondary;
+        }
+
+        img:hover {
+            filter: contrast(3);
+            width: 120px;
+            height: 150px;
+        }
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
     }
 
 }

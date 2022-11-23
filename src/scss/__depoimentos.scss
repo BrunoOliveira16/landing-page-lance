@@ -1,0 +1,131 @@
+#depoimentos {
+    background-color: $color-primary;
+    color: $font-color-primary;
+    display: block;
+
+    .stay {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px auto 50px auto;
+
+        @media screen and (max-width: 725px) and (min-width: 320px) {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        &__painel {
+            width: 50%;
+
+            @media screen and (max-width: 725px) and (min-width: 320px) {
+                display: flex;
+                justify-content: center;
+                margin: 30px auto;
+                width: 100%;
+                padding: 0 1.5rem;
+            }
+
+            img {
+                width: 90%;
+                height: auto; 
+            }
+        }
+
+        &__text {
+            width: 50%;
+            height: auto;
+
+            @media screen and (max-width: 725px) and (min-width: 320px) {
+                margin: 30px auto;
+                width: 100%;
+                padding: 0 1.5rem;
+            }
+
+            h1 {
+                font-size: $font-size-default;
+                text-align: left;
+                color: $color-secondary;
+                font-weight: 700;
+            }
+    
+            p {
+                font-size: $font-size-title;
+                line-height: 1.5rem;
+                font-weight: 400;
+                text-align: left;
+                margin: 0;
+            }
+
+            a {
+                color: $color-secondary;
+                text-decoration: none;
+                line-height: 2.5rem;
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+        }
+
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+        @media screen  and (max-width:769px) and (min-width: 320px) {
+            display: grid;
+            grid-template-columns: repeat(1, 4fr);
+            gap: 1rem;
+        }
+
+        .box {
+            width: calc(90% / 3 - 1rem);
+            height: auto;
+            background-color: $color-03;
+            margin: 1rem;
+            padding: 20px 40px 10px 40px;
+            position: relative;
+            border: 2px solid $color-secondary;
+            border-radius: 15px;
+            &:hover {
+                box-shadow: 5px 8px 20px $color-secondary;
+            }
+    
+            &__min {
+                display: flex;
+            }
+    
+            &__text {
+                display: flex;
+                flex-direction: column;
+                padding-top: 10px;
+                p {
+                    margin: 0;
+                }
+                blockquote {
+                    margin: 0;
+                    font-size: 0.5rem;
+                    font-weight: 400;
+                    color: $color-04;
+                }
+            }
+    
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 10px;
+                margin-bottom: 20px;
+            }
+
+            @media screen  and (max-width:769px) and (min-width: 320px) {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

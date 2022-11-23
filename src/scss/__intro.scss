@@ -5,6 +5,13 @@
     .hero {
         width: 100%;
 
+<<<<<<< HEAD
+=======
+        @media screen  and (max-width:434px) and (min-width: 320px) {
+            padding: 0 10px;
+        }
+
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
         img {
             display: flex;
             margin: 0 auto 0 auto;
@@ -40,4 +47,8 @@
         margin: 0;
         padding: 0 20px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a

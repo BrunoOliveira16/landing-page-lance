@@ -5,6 +5,7 @@ header .container {
     padding: 2rem;
     margin: 0 auto;
 
+<<<<<<< HEAD
     .logo{
         width: 40%;
         display: flex;
@@ -17,6 +18,44 @@ header .container {
         justify-content: flex-start;
         align-items: center;
 
+=======
+    @media screen and (max-width:854px) and (min-width: 320px) {
+        display: block;
+    }
+
+    @media screen and (max-width: 755px) and (min-width: 320px) {
+        padding: 0;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width:854px) and (min-width: 320px) {
+            margin: 0 auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        @media screen and (max-width: 755px) and (min-width: 320px) {
+            display: none;
+        }
+    }
+
+    .nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @media screen and (max-width:854px) and (min-width: 756px) {
+            width: 100%;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 755px) and (min-width: 320px) {
+            display: none;
+        }
+
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
         &__item {
             color: $font-color-primary;
             margin: 0 20px;
@@ -28,6 +67,55 @@ header .container {
                 animation: toTop;
                 animation-duration: 1.5s;
             }
+<<<<<<< HEAD
+=======
+
+            @media (max-width: 1267px){
+                font-size: $font-size-title;
+                margin: 0 10px;
+            }
+
+            @media (max-width: 783px){
+                font-size: $font-btn;
+            }
+        }
+
+        &__btn {
+            height: 30px;
+            color: $font-color-primary;
+            background-color: $color-secondary;
+            border-radius: 10px;
+            border: 2px solid $font-color-primary;
+            font-size: $font-btn;
+            font-weight: 700;
+            text-align: center;
+            &:hover {
+                color: $color-secondary;
+                background-color: $font-color-primary;
+                border: 3px solid $color-secondary;
+                cursor: pointer;
+            }
+            @media (max-width: 783px){
+                width: 20%;
+            }
+        }
+        &__input {
+            height: 25px;
+            color: $color-secondary;
+            border-radius: 10px;
+            border: 2px solid $color-secondary;
+            font-size: $font-btn;
+            margin-right: 10px;
+            padding-left: 10px;
+            &:hover {
+                box-shadow: 1px 1px 10px #f58220;
+            }
+            @media (max-width: 783px){
+                width: 30%;
+                height: 30px;
+                margin-left: 20px;
+            }
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
         }
     }
 }
@@ -35,6 +123,24 @@ header .container {
 header .menu {
     display: none;
 
+<<<<<<< HEAD
+=======
+    &__mobile {
+        list-style: none;
+    }
+
+    @media screen and (max-width: 755px) and (min-width: 320px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        a {
+            float: right;
+            background-color: $font-color-primary;
+        }
+    }
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
 
     .menu__nav {
         position: relative;
@@ -47,4 +153,61 @@ header .menu {
     &__icon {
         margin-top: 0;
     }
+<<<<<<< HEAD
+=======
+
+    /* formatação do menu dropdown*/
+    ul {
+        width: 150px;
+        position: absolute;
+        flex-direction: column;
+        list-style: none;
+        align-items:flex-start;
+        padding: 20px 10px;
+        margin-top: 30px;
+        background-color: $color-06;
+        .list__sub {
+            display: flex;
+        }
+    }
+
+    .menu__list {
+        display: none;
+    }
+
+    .list__item {
+        text-decoration: none;
+        color: $color-primary;
+        background-color: $color-06;
+        font-weight: 700;
+        margin: 5px 0;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    .list__input {
+        width: 100%;
+        border: 2px solid $color-secondary;
+        border-radius: 5px;
+        margin: 5px 0;
+    } 
+
+    .list__btn {
+        width: 100%;
+        background-color: $color-secondary;
+        color: $font-color-primary;
+        font-weight: 700;
+        border: 2px solid $font-color-primary;
+        border-radius: 5px;
+        text-align: center;
+        &:hover {
+            color: $color-secondary;
+            background-color: $font-color-primary;
+            border: 3px solid $color-secondary;
+            cursor: pointer;
+        }
+    }
+>>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
 }
