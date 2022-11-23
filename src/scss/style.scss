@@ -1,0 +1,69 @@
+@import '__vars.scss';
+@import '__fonts.scss';
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import '__nav.scss';
+@import '__animation.scss';
+@import '__header.scss';
+@import '__sobre.scss';
+@import '__produtos.scss';
+@import '__vitrine.scss';
+@import '__steps.scss';
+@import '__footer.scss';
+@import '__intro.scss';
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-primary;
+    font-family: $font-default;
+    margin: 0;
+}
+
+h1 {
+    color: $font-color-primary;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+article {
+
+    h1 {
+        color: $color-secondary;
+        font-size: 3rem;
+        text-align: left;
+    }
+
+}
+
+h2 {
+    color: $font-color-primary;
+    font-family: 'freshman', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 4rem;
+    text-shadow: 1px 2px 8px #FFFFFF;
+}
+
+#root,
+section,
+footer {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+section {
+    padding: 4rem 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    max-width: 90vw;
+};
