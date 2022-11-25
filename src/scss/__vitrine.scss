@@ -2,12 +2,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-<<<<<<< HEAD
-
-    &__item {
-        background-color: rgba(121, 148, 187, 0.979);
-        border-radius: 1rem;
-=======
     margin-bottom: 50px;
 
     @media screen and (max-width: 1024px) and (min-width: 668px) {
@@ -27,7 +21,6 @@
     &__item {
         background-color: $color-07;
         border-radius: 15px;
->>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
         display: flex;
         flex-flow: column;
         justify-content: center;
@@ -37,16 +30,6 @@
         position: relative;
         &:hover {
             animation: toTop;
-<<<<<<< HEAD
-            animation-duration: 1s;
-            box-shadow: 0 0 2px 2px rgba(25 , 25 , 25 , .2);
-        }
-    }
-
-    &__image {
-        justify-content: center;
-        display: flex;
-=======
             animation-duration: 2s;
             box-shadow: 1px 8px 20px #052947;
         }
@@ -60,48 +43,20 @@
     &__image {
         display: flex;
         justify-content: center;
->>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
         width: 100%;
     }
 
     &__title {
         font-size: 2rem;
-<<<<<<< HEAD
-        color: $color-secondary;
-        text-align: center;
-        width: 100%;
-=======
         color: $color-primary;
         font-weight: 700;
         text-align: center;
         width: 100%;
         margin: 10px auto;
->>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
     }
 
     &__desc {
         color: $font-color-secondary;
-<<<<<<< HEAD
-        font-size: $font-size-default;
-        margin-bottom: 3rem;
-        padding: 0 1rem;
-    }
-
-    &__button {
-        box-shadow: 0 0 2px 2px rgba(0,150,255,.2);
-        background-color: $color-primary;
-        border-radius: 1rem;
-        border: 1px solid $color-primary;
-        color: $font-color-primary;
-        font-weight: bold;
-        padding: 1rem 2rem;
-        font-size: $font-size-default;
-        text-decoration: none;
-        align-self: center;
-        margin-bottom: 2rem;
-        &:hover {
-            box-shadow: 0 0 2px 2px $color-secondary;
-=======
         font-size: $font-size-title;
         margin-bottom: 1rem;
         text-align: center;
@@ -122,7 +77,6 @@
             background-color: $font-color-primary;
             color: $color-primary;
             box-shadow: 1px 8px 15px #052947;
->>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
         }
     }
 }

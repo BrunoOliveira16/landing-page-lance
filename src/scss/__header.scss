@@ -5,20 +5,6 @@ header .container {
     padding: 2rem;
     margin: 0 auto;
 
-<<<<<<< HEAD
-    .logo{
-        width: 40%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .nav{
-        width: 60%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-=======
     @media screen and (max-width:854px) and (min-width: 320px) {
         display: block;
     }
@@ -55,7 +41,6 @@ header .container {
             display: none;
         }
 
->>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
         &__item {
             color: $font-color-primary;
             margin: 0 20px;
@@ -67,8 +52,6 @@ header .container {
                 animation: toTop;
                 animation-duration: 1.5s;
             }
-<<<<<<< HEAD
-=======
 
             @media (max-width: 1267px){
                 font-size: $font-size-title;
@@ -115,7 +98,6 @@ header .container {
                 height: 30px;
                 margin-left: 20px;
             }
->>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
         }
     }
 }
@@ -123,8 +105,6 @@ header .container {
 header .menu {
     display: none;
 
-<<<<<<< HEAD
-=======
     &__mobile {
         list-style: none;
     }
@@ -140,7 +120,6 @@ header .menu {
             background-color: $font-color-primary;
         }
     }
->>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
 
     .menu__nav {
         position: relative;
@@ -153,8 +132,6 @@ header .menu {
     &__icon {
         margin-top: 0;
     }
-<<<<<<< HEAD
-=======
 
     /* formatação do menu dropdown*/
     ul {
@@ -209,5 +186,4 @@ header .menu {
             cursor: pointer;
         }
     }
->>>>>>> 64473ee8dfd8cc49fdcb36eb1237bfed0be5e03a
 }
